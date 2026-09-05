@@ -15,7 +15,7 @@
         </div>
 
     <nav class="sidebar-nav">
-        <a class="active" href="#main-content" aria-label="Dashboard" title="Dashboard">
+        <a href="#main-content" aria-label="Dashboard" title="Dashboard">
             <span><i class="fas fa-home"></i></span>
         </a>
 
@@ -30,10 +30,6 @@
         <a href="#schedule" aria-label="Schedule" title="Schedule">
             <span><i class="fas fa-calendar"></i></span>
         </a>
-
-        <!-- <a href="#notifications" aria-label="Notifications" title="Notifications">
-            <span><i class="fas fa-bell"></i></span>
-        </a> -->
 
         <a href="#pictures" aria-label="Gallery" title="Gallery">
             <span><i class="fas fa-images"></i></span>
@@ -60,18 +56,13 @@
             <div>
                 <p class="eyebrow" id="current-date" aria-live="polite"></p>
                 <h1>Good morning, Aljon Jay.</h1>
-                <!-- <p class="header-copy">Welcome to your personal dashboard.</p> -->
             </div>
             <button class="profile-button" type="button" aria-label="Open profile menu">
                 <span class="notification-icon"><i class="fas fa-bell"></i></span>
             </button>
         </header>
 
-        <br>
-
-        <!-- PASTE THE BAR GRAPH HERE -->
-         <!-- MODERN BAR GRAPH -->
-        <section class="chart-section">
+        <section class="chart-section" id="schedule">
             <div class="chart-header">
                 <div>
                     <p class="chart-eyebrow">STUDY OVERVIEW</p>
@@ -102,8 +93,20 @@
                     <div class="grid-line line-4"></div>
                     <div class="grid-line line-5"></div>
 
+                    <svg class="study-line" viewBox="0 0 700 165" preserveAspectRatio="none" aria-hidden="true">
+                        <polyline class="study-line-path" points="50,124 150,124 250,0 350,0 450,0 550,62 650,124"></polyline>
+                        <g class="study-line-points">
+                            <circle cx="50" cy="124" r="4"></circle>
+                            <circle cx="150" cy="124" r="4"></circle>
+                            <circle cx="250" cy="0" r="4"></circle>
+                            <circle cx="350" cy="0" r="4"></circle>
+                            <circle cx="450" cy="0" r="4"></circle>
+                            <circle cx="550" cy="62" r="4"></circle>
+                            <circle cx="650" cy="124" r="4"></circle>
+                        </g>
+                    </svg>
+
                     <div class="bars">
-                        <!-- ======MONDAY===== -->
                         <div class="bar-column">
                             <div class="bar-value" 
                             contenteditable="true" 
@@ -113,7 +116,6 @@
                             <div class="bar"></div>
                             <span>Mon</span>
                         </div>
-                        <!-- ======TUESDAY===== -->
                         <div class="bar-column">
                             <div class="bar-value" 
                             contenteditable="true" 
@@ -123,7 +125,6 @@
                             <div class="bar"></div>
                             <span>Tue</span>
                         </div>
-                        <!-- ======WEDNESDAY===== -->
                         <div class="bar-column">
                             <div class="bar-value" 
                             contenteditable="true" 
@@ -133,7 +134,6 @@
                             <div class="bar active-bar"></div>
                             <span>Wed</span>
                         </div>
-                        <!-- ======THURSDAY===== -->
                         <div class="bar-column">
                             <div class="bar-value" 
                             contenteditable="true" 
@@ -143,7 +143,6 @@
                             <div class="bar active-bar"></div>
                             <span>Thu</span>
                         </div>
-                        <!-- ======FRIDAY===== -->
                         <div class="bar-column">
                             <div class="bar-value" 
                             contenteditable="true" 
@@ -153,7 +152,6 @@
                             <div class="bar active-bar"></div>
                             <span>Fri</span>
                         </div>
-                        <!-- ======SATURDAY===== -->
                         <div class="bar-column">
                             <div class="bar-value" 
                             contenteditable="true" 
@@ -163,7 +161,6 @@
                             <div class="bar active-bar"></div>
                             <span>Sat</span>
                         </div>
-                        <!-- ======SUNDAY===== -->
                         <div class="bar-column">
                             <div class="bar-value" 
                             contenteditable="true" 
@@ -177,10 +174,6 @@
                 </div>
             </div>
         </section>
-
-        <br>
-
-<!-- =======================Summary========================== -->
 
         <section class="stats-grid" aria-label="Workspace summary">
             <article class="stat-card">
@@ -196,8 +189,76 @@
                 <div><p>Total Hours studied</p><strong>42h</strong><span class="trend neutral">During Free Time</span></div>
             </article>
         </section>
- 
+
+<br><br><br>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="about-intro">
+                <div class="profile-card" id="pictures" aria-label="Profile initials AJ">
+                    </div>
+                    <div class="about-identity">
+                        <p class="about-kicker">STUDENT · DESIGNER · PROGRAMMER</p>
+                        <h2 id="about-title">Aljon Jay M. Bongcalon</h2>
+                        <p class="about-role">College Student</p>
+                    </div>
+
+                    <div class="about-column">
+                        <article class="about-block">
+                            <h3>About Me</h3>
+                            <p>I am a curious student from the Philippines of Davao del Norte, Santo Tomas, Tulalian who enjoys turning ideas into clear, I am 20 years old and I'm developing my skills in design, 
+                                web development, and creative problem-solving, programming, networking and other related fields. I'm fast learner and I'm always eager to take on new challenges. Adapting to new environments and learning new technologies is something I truly enjoy.</p>
+                        </article>
+                        <article class="about-block">
+                            <h3>Education</h3>
+                            <h4>Tulalian Elementary School</h4>
+                            <p>Elementary Education</p>
+                            <p class="muted-detail">Graduated: 2017</p>
+                            <h4>Tulalian National High School</h4>
+                            <p>Secondary Education</p>
+                            <p class="muted-detail">Graduated: 2023</p>
+                            <h4>ACES Polytechnic College Inc.</h4>
+                            <p>Bachelor of Science in Information Technology</p>
+                            <p class="muted-detail">Expected graduation: 2027</p>
+                            <strong class="grade">GPA: 8080</strong>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-column">
+                        <article class="about-block">
+                            <h3>Relevant Coursework</h3>
+                            <h4>Web Development</h4>
+                            <p>Studied responsive layouts, accessible interfaces, and interactive browser experiences.</p>
+                            <h4>Data Visualization</h4>
+                            <p>Learned to turn structured information into readable charts and useful insights.</p>
+                            <h4>Project Management</h4>
+                            <p>Gained experience in planning, executing, and delivering software projects within tight deadlines.</p>
+                            <h4>Networking</h4>
+                            <p>Learned the fundamentals of computer networking, including protocols, topologies, and security.</p>
+                        </article>
+                    </div>
+
+                    <div class="about-column">
+                        <article class="about-block experience-block">
+                            <h3>Experience</h3>
+                            <div class="experience-item">
+                                <span class="timeline-dot"></span>
+                                <div><h4>Student project team</h4><p class="muted-detail">2025 - Present</p><p>Created dashboard concepts, organized project work, and presented design decisions to classmates.</p></div>
+                            </div>
+                            <div class="experience-item">
+                                <span class="timeline-dot"></span>
+                                <div><h4>Independent practice</h4><p class="muted-detail">2024 - Present</p><p>Building small web projects to strengthen HTML, CSS, and JavaScript skills.</p></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
+
     <script src="index.js"></script>
 </body>
 </html>
