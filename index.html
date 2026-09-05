@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>A</h2>
+        </div>
+
+    <nav class="sidebar-nav">
+        <a class="active" href="#main-content" aria-label="Dashboard" title="Dashboard">
+            <span><i class="fas fa-home"></i></span>
+        </a>
+
+        <a href="#about" aria-label="Overview" title="Overview">
+            <span><i class="fas fa-info-circle"></i></span>
+        </a>
+
+        <a href="#skills" aria-label="Projects" title="Projects">
+            <span><i class="fas fa-tasks"></i></span>
+        </a>
+
+        <a href="#schedule" aria-label="Schedule" title="Schedule">
+            <span><i class="fas fa-calendar"></i></span>
+        </a>
+
+        <!-- <a href="#notifications" aria-label="Notifications" title="Notifications">
+            <span><i class="fas fa-bell"></i></span>
+        </a> -->
+
+        <a href="#pictures" aria-label="Gallery" title="Gallery">
+            <span><i class="fas fa-images"></i></span>
+        </a>
+
+        <a href="#location" aria-label="Locations" title="Locations">
+            <span><i class="fas fa-map-marker-alt"></i></span>
+        </a>
+
+        <a href="#contact" aria-label="Contact" title="Contact">
+            <span><i class="fas fa-phone"></i></span>
+        </a>
+    </nav>
+
+    <div class="sidebar-bottom" id="active6">
+        <a href="logout.html" aria-label="Sign out" title="Sign out">
+            <span><i class="fas fa-sign-out-alt"></i></span>
+        </a>
+    </div>
+    </aside>
+
+    <main class="main-content" id="main-content">
+        <header class="top-header">
+            <div>
+                <p class="eyebrow" id="current-date" aria-live="polite"></p>
+                <h1>Good morning, Aljon Jay.</h1>
+                <!-- <p class="header-copy">Welcome to your personal dashboard.</p> -->
+            </div>
+            <button class="profile-button" type="button" aria-label="Open profile menu">
+                <span class="notification-icon"><i class="fas fa-bell"></i></span>
+            </button>
+        </header>
+
+        <br>
+
+        <!-- PASTE THE BAR GRAPH HERE -->
+         <!-- MODERN BAR GRAPH -->
+        <section class="chart-section">
+            <div class="chart-header">
+                <div>
+                    <p class="chart-eyebrow">STUDY OVERVIEW</p>
+                    <h2>Weekly Study Hours</h2>
+                </div>
+
+                <div class="chart-filter">
+                    <i class="fas fa-calendar-alt"></i>
+                    This Week
+                </div>
+            </div>
+
+            <div class="bar-chart">
+
+                <div class="chart-y-axis">
+                    <span>8h</span>
+                    <span>6h</span>
+                    <span>4h</span>
+                    <span>2h</span>
+                    <span>0h</span>
+                </div>
+
+                <div class="chart-area">
+
+                    <div class="grid-line line-1"></div>
+                    <div class="grid-line line-2"></div>
+                    <div class="grid-line line-3"></div>
+                    <div class="grid-line line-4"></div>
+                    <div class="grid-line line-5"></div>
+
+                    <div class="bars">
+                        <!-- ======MONDAY===== -->
+                        <div class="bar-column">
+                            <div class="bar-value" 
+                            contenteditable="true" 
+                            data-hours="2" 
+                            role="textbox" 
+                            aria-label="Monday study hours">2h</div>
+                            <div class="bar"></div>
+                            <span>Mon</span>
+                        </div>
+                        <!-- ======TUESDAY===== -->
+                        <div class="bar-column">
+                            <div class="bar-value" 
+                            contenteditable="true" 
+                            data-hours="2" 
+                            role="textbox" 
+                            aria-label="Tuesday study hours">2h</div>
+                            <div class="bar"></div>
+                            <span>Tue</span>
+                        </div>
+                        <!-- ======WEDNESDAY===== -->
+                        <div class="bar-column">
+                            <div class="bar-value" 
+                            contenteditable="true" 
+                            data-hours="8" 
+                            role="textbox" 
+                            aria-label="Wednesday study hours">8h</div>
+                            <div class="bar active-bar"></div>
+                            <span>Wed</span>
+                        </div>
+                        <!-- ======THURSDAY===== -->
+                        <div class="bar-column">
+                            <div class="bar-value" 
+                            contenteditable="true" 
+                            data-hours="8" 
+                            role="textbox" 
+                            aria-label="Thursday study hours">8h</div>
+                            <div class="bar active-bar"></div>
+                            <span>Thu</span>
+                        </div>
+                        <!-- ======FRIDAY===== -->
+                        <div class="bar-column">
+                            <div class="bar-value" 
+                            contenteditable="true" 
+                            data-hours="12" 
+                            role="textbox" 
+                            aria-label="Friday study hours">12h</div>
+                            <div class="bar active-bar"></div>
+                            <span>Fri</span>
+                        </div>
+                        <!-- ======SATURDAY===== -->
+                        <div class="bar-column">
+                            <div class="bar-value" 
+                            contenteditable="true" 
+                            data-hours="5" 
+                            role="textbox" 
+                            aria-label="Saturday study hours">5h</div>
+                            <div class="bar active-bar"></div>
+                            <span>Sat</span>
+                        </div>
+                        <!-- ======SUNDAY===== -->
+                        <div class="bar-column">
+                            <div class="bar-value" 
+                            contenteditable="true" 
+                            data-hours="2" role="textbox" 
+                            aria-label="Sunday study hours">2h</div>
+                            <div class="bar"></div>
+                            <span>Sun</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+<!-- =======================Summary========================== -->
+
+        <section class="stats-grid" aria-label="Workspace summary">
+            <article class="stat-card">
+                <div class="stat-icon blue"><i class="fas fa-layer-group"></i></div>
+                <div><p>Active Courses</p><strong>7</strong><span class="trend">+1 next year</span></div>
+            </article>
+            <article class="stat-card">
+                <div class="stat-icon teal"><i class="fas fa-check"></i></div>
+                <div><p>Courses Progress</p><strong>38%</strong><span class="trend">1st Semester 1st Term</span></div>
+            </article>
+            <article class="stat-card">
+                <div class="stat-icon cream"><i class="fas fa-clock"></i></div>
+                <div><p>Total Hours studied</p><strong>42h</strong><span class="trend neutral">During Free Time</span></div>
+            </article>
+        </section>
+ 
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
